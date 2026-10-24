@@ -71,7 +71,7 @@ setInterval(()=>{
       const hit=obstacles.some(o=>nx+13>o.x&&nx-13<o.x+o.w&&ny+13>o.y&&ny-13<o.y+o.h);
       if(!hit){p.x=nx;p.y=ny;}
       if(p.x>=WORLD.width-58&&p.y>=WORLD.height/2-75&&p.y<=WORLD.height/2+75){
-        p.finished=true;p.place=[...room.players.values()].filter(q=>q.finished).length-1;
+        p.finished=true;p.place=[...room.players.values()].filter(q=>q.finished).length;
       }
     }
     if(now>=room.endsAt){room.started=false;io.to(room.code).emit('race-ended');}
