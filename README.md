@@ -1,5 +1,7 @@
 # Chaos Run — Friendly Clash
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/uKg-gta/Friendly-Clash)
+
 A responsive multiplayer browser obstacle-race game for phones, tablets, and laptops.
 
 ## Features
@@ -21,7 +23,7 @@ npm start
 Open http://localhost:3000. To test multiplayer, use multiple browser windows. For other devices, deploy the server or use your computer's LAN address.
 
 ## Deploy
-Deploy as a persistent Node.js service on a host that supports WebSockets (for example Render, Railway, or a VPS). Build command: `npm install`; start command: `npm start`. The server listens on the provider's `PORT`. Do not use static-only hosting because the Socket.IO server is required.
+Use the Deploy to Render button above, or open the Render Dashboard and choose New > Blueprint. Connect the `uKg-gta/Friendly-Clash` repository and select branch `main`. Review the Blueprint and click Deploy Blueprint. Render uses `render.yaml` at the repository root. Build command: `npm install`; start command: `npm start`. The service listens on the provider's `PORT`. Do not use static-only hosting because the Socket.IO server is required.
 
 ## Notes
 - Room state is in memory; restarting the server clears active rooms.
