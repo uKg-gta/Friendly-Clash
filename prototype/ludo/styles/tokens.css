@@ -1,0 +1,46 @@
+:root {
+      --bg-primary: #101114;
+      --bg-secondary: #191A1E;
+      --bg-elevated: #24252A;
+      --accent-gold: #D6B36A;
+      --accent-gold-soft: rgba(214, 179, 106, 0.14);
+      --accent-gold-border: rgba(214, 179, 106, 0.35);
+      --text-primary: #F0E8D8;
+      --text-secondary: #99969A;
+      --status-success: #64B58A;
+      --status-error: #E47777;
+      --status-warning: #E5B86B;
+      --status-info: #82A9D6;
+      --status-disabled: #65656A;
+      --border-subtle: rgba(240, 232, 216, 0.08);
+      --font-active: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+
+      /* Traditional Ludo colours (rich & balanced for dark theme) */
+      --ludo-red: #D94B4B;
+      --ludo-green: #3FA36C;
+      --ludo-yellow: #E2B93B;
+      --ludo-blue: #3D7FD6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-active);
+      overflow-x: hidden;
+      line-height: 1.4;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+

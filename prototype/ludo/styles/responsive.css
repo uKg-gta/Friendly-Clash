@@ -1,0 +1,28 @@
+/* Responsive Breakpoints */
+    @media (max-width: 960px) {
+      .workspace {
+        grid-template-columns: 1fr;
+        padding: 12px 14px 20px;
+      }
+      .board-shell {
+        max-width: 560px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .topbar {
+        padding: 10px 14px;
+      }
+      .showcase-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .dice-button {
+        width: 74px;
+        height: 74px;
+      }
+      #diceCanvas {
+        width: 64px;
+        height: 64px;
+      }
+    }
+
