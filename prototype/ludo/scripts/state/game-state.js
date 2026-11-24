@@ -1,3 +1,5 @@
+import { PLAYERS, getLogicalCoords } from '../config/board.js';
+
       export const state = {
         mode: 'classic', // 'classic' | 'duo'
         activePlayerIndices: [0, 1, 2, 3],
