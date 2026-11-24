@@ -7,6 +7,11 @@
     "userInterfaceStyle": "dark",
     "android": {
       "package": "com.friendlyclash.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8a91bf0e-791c-40e6-acf5-cc72feb29a66"
+      }
     }
   }
 }
