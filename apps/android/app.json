@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Friendly Clash",
+    "slug": "friendly-clash",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.friendlyclash.app"
+    }
+  }
+}
