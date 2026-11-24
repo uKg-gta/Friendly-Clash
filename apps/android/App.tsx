@@ -1,10 +1,9 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StatusBar, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.screen}>
-      <StatusBar style="light" />
+      <StatusBar barStyle="light-content" />
       <View style={styles.mark}>
         <Text style={styles.markText}>FC</Text>
       </View>
