@@ -29,7 +29,8 @@ bindInteractions({
   boardCanvas: board.boardCanvas,
   project: board.project,
   unproject: board.unproject,
-  getBoardMetrics: board.getBoardMetrics
+  getBoardMetrics: board.getBoardMetrics,
+  showToast: ui.showToast
 });
 
 window.addEventListener('resize', board.resizeBoard);

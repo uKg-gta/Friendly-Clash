@@ -1,6 +1,6 @@
 export function bindInteractions({
   state, sound, currentPlayerIndex, executeAuthoritativeMove, requestServerRoll,
-  resetGame, runShowcase, boardCanvas, project, unproject, getBoardMetrics
+  resetGame, runShowcase, boardCanvas, project, unproject, getBoardMetrics, showToast
 }) {
 // Pinpoint touch/click selection on 3D-projected board
       boardCanvas.addEventListener('pointerdown', (e) => {
@@ -13,7 +13,7 @@ export function bindInteractions({
         // Check distance to projected screen center of each legal token (generous mobile hit radius)
         let bestToken = -1;
         let bestDist = Infinity;
-        const hitRadius = Math.max(24, (boardMetrics.baseSize / 15) * 0.95);
+        const hitRadius = Math.max(24, (getBoardMetrics().baseSize / 15) * 0.95);
 
         state.legalTokenIndices.forEach(tIdx => {
           const tok = state.tokens[activeP][tIdx];
